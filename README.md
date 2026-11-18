@@ -1,23 +1,22 @@
 # Basic Network Sniffer
 
-**CodeAlpha Cyber Security Internship – Task 1**
+A Python-based network monitoring tool that captures and analyzes network packets in real time using the Scapy library.
 
-## Project Overview
+## Overview
 
-Basic Network Sniffer is a Python-based network monitoring tool developed using Scapy. It captures and analyzes network packets and displays useful information about network communication.
+Basic Network Sniffer is a simple network analysis application designed to monitor network traffic and inspect packet information. It helps users understand how data travels across a network by displaying important packet details and identifying different network protocols.
 
 ## Features
 
-- Live network packet capturing
-- Source and destination IP identification
-- TCP, UDP and ICMP protocol detection
-- Packet filtering by protocol
-- Source and destination port identification
-- Packet length analysis
-- Timestamp display
-- Payload preview when available
-- Packet capture statistics
-- Automatic packet information logging
+- **Live Packet Capturing:** Capture network packets in real time.
+- **IP Address Analysis:** Display source and destination IP addresses.
+- **Protocol Detection:** Identify TCP, UDP, and ICMP protocols.
+- **Protocol Filtering:** Filter captured packets based on selected protocols.
+- **Port Information:** Display source and destination port numbers when available.
+- **Packet Details:** Display packet length and payload previews when available.
+- **Timestamp:** Display the time each packet is captured.
+- **Packet Statistics:** View packet counts and protocol statistics.
+- **Logging:** Save captured packet information to a text file.
 
 ## Technologies Used
 
@@ -26,62 +25,96 @@ Basic Network Sniffer is a Python-based network monitoring tool developed using 
 - Npcap
 - Visual Studio Code
 
-## Installation
+## Installation and Setup
 
-1. Install Python.
-2. Install Npcap on Windows.
-3. Clone this repository.
-4. Create a virtual environment.
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+```
+
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-5. Activate the environment.
+### 3. Activate the Virtual Environment
 
-```powershell
+For Windows:
+
+```bash
 venv\Scripts\activate
 ```
 
-6. Install dependencies.
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+### 5. Install Npcap
 
-Run the program:
+Install Npcap on Windows if it is not already installed.
+
+Official website: https://npcap.com/
+
+## How to Run
+
+Run the application using:
 
 ```bash
 python sniffer.py
 ```
 
-Choose a packet filtering option:
+Select your preferred packet filtering option from the displayed menu.
 
-1. ALL
-2. TCP
-3. UDP
-4. ICMP
+**Available Options:**
 
-Press `CTRL + C` to stop capturing packets and view statistics.
+1. All Packets
+2. TCP Packets
+3. UDP Packets
+4. ICMP Packets
+
+The application displays captured packet information and provides statistics when packet capturing is stopped.
 
 ## Project Structure
 
 ```text
-CodeAlpha_BasicNetworkSniffer/
+Basic-Network-Sniffer/
 │
 ├── sniffer.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-└── venv/
+│
+└── captured_packets.txt
 ```
+
+*Note: The captured packet log file is generated when the application runs.*
+
+## Learning Outcomes
+
+Through this project, I explored:
+
+- Network traffic monitoring.
+- Packet capturing and analysis.
+- TCP, UDP, and ICMP protocols.
+- IP addressing and port information.
+- Python-based network programming.
+- Basic network security concepts.
 
 ## Ethical Considerations
 
-This project is developed for educational purposes and authorized network monitoring only. Do not capture or inspect traffic on networks without permission.
+This tool is intended for educational purposes and authorized network monitoring only. Always obtain permission before capturing or analyzing network traffic. Do not inspect or collect private information belonging to others.
 
-## Internship
+## Author
 
-Developed as part of the CodeAlpha Cyber Security Internship.
+**Kithmi Githara**
+
+GitHub: https://github.com/KiTh003
+
+---
+
+*Developed as an independent Python networking and cybersecurity learning project.*
